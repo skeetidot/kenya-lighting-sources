@@ -288,7 +288,7 @@
 
     <script>
         // Mapbox access token
-        L.mapbox.accessToken = 'pk.eyJ1Ijoic2tlZXRpZG90IiwiYSI6IjJHd3UxZDgifQ.aeE1dODYNEMRwHQZT1MrLA';
+        L.mapbox.accessToken = 'pk.eyJ1IjoibGV3aW5rbGVyMiIsImEiOiJjaXh4MGQ2Y3cwMDJmMzNvOXlqcnduYWg2In0.mOf12qV22JcLvt-SA3rrsw';
 
         // Initialize the Mapbox map, with the Mapbox Light basemap, centered in Kenya with an initial zoom level of 7, a minimum zoom of 7, a maximum zoom of 9, and panning bounds so the user doesn't pan too far away from Kenya
         var map = L.mapbox.map('map', 'mapbox.light', {
@@ -298,7 +298,7 @@
             maxZoom: 9,
             maxBounds: L.latLngBounds([-6.22, 27.72], [5.76, 47.83])
         });
-
+        
         // Define global variables for the three data layers (county boundaries, electric lighting circles, and traditional lighting circles), the attribute to map for the choropleth, and the scale factor for the proportional symbols
         var countyBoundaries,
             countyCentroids,
@@ -729,7 +729,7 @@
 
             });
 
-            // When the user mouses off of the traditional lighting circle
+            // When the user mouses off of the traditional lighting circles
             traditionalLighting.on('mouseout', function (e) {
 
                 // Access the properties of the selected feature and assign it to the props variable
